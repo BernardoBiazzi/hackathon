@@ -1,0 +1,10 @@
+{
+  ".js, .jsx": {
+    "parser": "babylon",
+    "style": "@ifood/import-sort-style"
+  },
+  ".ts, .tsx": {
+    "parser": "typescript",
+    "style": "@ifood/import-sort-style"
+  }
+}

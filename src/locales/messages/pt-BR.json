@@ -1,0 +1,36 @@
+{
+  "error": {
+    "unexpected": {
+      "title": "Erro inesperado 😥",
+      "description": "Tente atualizar a página em alguns segundos",
+      "reload": "Recarregar"
+    }
+  },
+  "home": {
+    "heading": "Boas vindas ao boilerplate Next.js do iFood",
+    "page": {
+      "title": "Boilerplate Next.js do iFood",
+      "description": "Gerado pelo Tompero's Furnace"
+    },
+    "learn": {
+      "title": "Aprenda sobre Next.js",
+      "description": "Aprenda sobre Next.js em um curso interativo com questionários!"
+    },
+    "rfc": {
+      "title": "RFC-WEBAPP",
+      "description": "Conheça as boas práticas e recomendações do iFood para aplicações Web"
+    },
+    "space": {
+      "title": "Espaço Frontend",
+      "description": "Aqui você encontrará tudo sobre nosso ecossistema: guias do usuário, iniciativas, aplicativos, bibliotecas, roteiro, capítulos, pesquisa (# inovação), etc."
+    },
+    "error-boundary": {
+      "title": "Error Boundaries",
+      "description": "Clique aqui para conhecer mais sobre ",
+      "button-label": "Clique aqui para simular"
+    },
+    "footer": {
+      "poweredBy": "Feito com carinho por iFood"
+    }
+  }
+}

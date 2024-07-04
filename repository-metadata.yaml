@@ -1,0 +1,13 @@
+apiVersion: ifood/v2
+kind: Repository
+spec:
+  contents:
+    - name: {{cookiecutter.serviceName}}
+      description: {{cookiecutter.serviceDescription}}
+      ownerLayerSlug: {{cookiecutter.ownerLayerSlug}}
+      type: service
+      subType:
+        - webapp
+      impactLevel: {{cookiecutter.impactLevel}}
+      deployment: 
+        type: static

@@ -1,0 +1,13 @@
+include:
+  - project: 'ifood/pipelines/gitlab-pipelines'
+    ref: ifood-web-application-4-stable
+    file: 'pipelines/ifood-web-application/main.yml'
+
+variables:
+  SERVICE_NAME: {{cookiecutter.serviceName}}
+  SANDBOX_BUCKET: {{cookiecutter.sandboxBucket}}
+  PRODUCTION_BUCKET: {{cookiecutter.productionBucket}}
+  BUCKET_OBJECT_ACL: 'bucket-owner-full-control'
+  NODE_VERSION: 18.16.1
+  BUILD_FOLDER: .next/static
+  # TODO: Aboyeur Docs Configuration https://code.ifoodcorp.com.br/ifood/frontend-engineering/aboyeur/-/tree/main/pipelines/ifood-aboyeur-docs
