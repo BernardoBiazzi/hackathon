@@ -41,6 +41,7 @@
     "@ifood/pomodoro-icons": "2.1.0",
     "@ifood/pomodoro-tokens": "2.2.0",
     "axios": "^0.24.0",
+    "html2canvas": "^1.4.1",
     "i18next": "21.6.0",
     "next": "12.0.9",
     "react": "17.0.2",
