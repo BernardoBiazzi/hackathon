@@ -2,9 +2,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { Flex, Heading, Tabs, Text } from '@ifood/pomodoro-components';
 import { ChevronRight } from '@ifood/pomodoro-icons';
-import FeedGeneration from 'components/feedGeneration';
+import ImageGeneration from 'components/imageGeneration';
 import { Page } from 'components/page';
-import StoriesGeneration from 'components/storiesGeneration';
 import type { NextPage } from 'next';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
@@ -64,10 +63,10 @@ const Home: NextPage = () => {
 
           <Tabs>
             <Tabs.Pane label="Feed">
-              <FeedGeneration />
+              <ImageGeneration type="Feed" />
             </Tabs.Pane>
             <Tabs.Pane label="Stories">
-              <StoriesGeneration />
+              <ImageGeneration type="Storie" />
             </Tabs.Pane>
           </Tabs>
         </Section>

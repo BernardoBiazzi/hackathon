@@ -8,7 +8,7 @@ const generateContent = (merchant: any) => {
   return `{
     Gere um prompt descritivo de uma imagem realista de um prato de comida, na qualidade de foto, apenas com os elementos que deve estar contido na imagem, com base no restaurante contido no json a seguir: ${JSON.stringify(
       merchant
-    )}. Considere também um tema de acordo com a data de hoje, 2024-03-07. Faça um prompt de no máximo duas linhas e que explicite que não pode ter texto na imagem.
+    )}. Considere também um tema de acordo com a data de hoje, ${new Date().toISOString()}. Faça um prompt de no máximo duas linhas e que explicite que não pode ter texto na imagem.
   }`;
 };
 
