@@ -6,12 +6,7 @@ import ImageGeneration from 'components/imageGeneration';
 import { Page } from 'components/page';
 import type { NextPage } from 'next';
 import Link from 'next/link';
-import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-
-const Container = styled.div`
-  padding: 1rem 2rem;
-`;
 
 const Section = styled.section`
   display: flex;
@@ -21,8 +16,6 @@ const Section = styled.section`
 
   justify-content: left;
   min-height: 100vh;
-  padding: 50px;
-  padding-top: 32px;
 `;
 
 const Breadcrumb = styled.div`
@@ -37,42 +30,41 @@ const Breadcrumb = styled.div`
   }
 `;
 
-const Home: NextPage = () => {
-  const { t } = useTranslation('home');
-
+const PostGenerator: NextPage = () => {
   return (
-    <Page title={t('page.title')} description={t('page.description')}>
-      <Container>
-        <Section>
-          <Breadcrumb>
-            <Link href="/">
-              <Text>Ínicio</Text>
-            </Link>
-            <ChevronRight></ChevronRight>
-            <Link href="/post-generator">
-              <Text fontWeight="500">Gerador de publicações</Text>
-            </Link>
-          </Breadcrumb>
+    <Page
+      title={'Gerador de publicações'}
+      description={'Gere imagens para postar nas suas redes sociais e alavancar suas vendas'}
+    >
+      <Section>
+        <Breadcrumb>
+          <Link href="/">
+            <Text>Ínicio</Text>
+          </Link>
+          <ChevronRight></ChevronRight>
+          <Link href="/post-generator">
+            <Text fontWeight="500">Gerador de publicações</Text>
+          </Link>
+        </Breadcrumb>
 
-          <Flex flexDirection="column" mb="32px">
-            <Heading as="h1" m="0">
-              Gerador de publicações
-            </Heading>
-            <Text color="#717171">Gere imagens para postar nas suas redes sociais e alavancar suas vendas</Text>
-          </Flex>
+        <Flex flexDirection="column" mb="32px">
+          <Heading as="h1" m="0">
+            Gerador de publicações
+          </Heading>
+          <Text color="#717171">Gere imagens para postar nas suas redes sociais e alavancar suas vendas</Text>
+        </Flex>
 
-          <Tabs>
-            <Tabs.Pane label="Feed">
-              <ImageGeneration type="Feed" />
-            </Tabs.Pane>
-            <Tabs.Pane label="Stories">
-              <ImageGeneration type="Storie" />
-            </Tabs.Pane>
-          </Tabs>
-        </Section>
-      </Container>
+        <Tabs>
+          <Tabs.Pane label="Feed">
+            <ImageGeneration type="Feed" />
+          </Tabs.Pane>
+          <Tabs.Pane label="Stories">
+            <ImageGeneration type="Storie" />
+          </Tabs.Pane>
+        </Tabs>
+      </Section>
     </Page>
   );
 };
 
-export default Home;
+export default PostGenerator;
